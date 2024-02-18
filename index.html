@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title="прототип">Мультиверсум</title>
+<!--<meta name="collapse" content="0000:00:00:00:00:00.000">  <--{генерируется изнанкой}-->
+<!--<meta name="awake"    content="0000:00:00:00:00:00.000">  <--{генерируется изнанкой}-->
+<!--<meta name="metrika"  content="${активная.метрика}">      <--{генерируется изнанкой}-->
+<!--<meta name="reper"    content="${активный.репер}">        <--{генерируется изнанкой}-->
+<!--<meta name="oper"     content="${активный.оператор}">     <--{генерируется изнанкой}-->
+<!--<link id="MetrikaWave" href="/metrika/wave/wave-metrika.css" rel="stylesheet"> <--{генерируется изнанкой}-->
+</head>
+<body>
+    <h1>Мультиверсум</h1>
+    <in-side id="inside" repers="/repers.js" waves="/waves.js" metrika="wave">
+        <front-side for="wave" id="multivers" layout="~/layout/multivers" look="inside">
+            <wave-guide slot="wave" wid="welcome"></wave-guide>
+            <wave-guide slot="error"  wid="error"></wave-guide>
+            <wave-guide slot="road"   wid="road" ></wave-guide>
+            <wave-guide slot="oper"   wid="login"></wave-guide>
+            <wave-guide slot="inside" mode="fix" ></wave-guide>
+        </front-side>
+        <back-side id="api">
+            <re-cursor id="wave" rid="wave" wid="wave" metrika="wave">
+                <api-wave for="wave" src="/wave-api.js"></api-wave>
+                <api-git  for="wave" src="https://git.in-wave.com/multivers/wave" hub="forgejo"></api-git>
+            </re-cursor>
+            <re-cursor id="fixiki" rid="fixiki" wid="fixiki" metrika="fixiki.in-wave.com">
+                <api-wave for="fixiki" src="https://fixiki.in-wave.com/wave-api.js"></api-wave>
+            </re-cursor>
+            <re-cursor id="uazdao" rid="uaz.dao" wid="uaz.dao" metrika="semiurg.ru">
+                <api-wordpress for="uazdao" src="https://semiurg.ru/wp-json"></api-wordpress>
+                <api-telegram  for="uazdao" channel="https://t.me/neurogenial" bot="ImageCollectorBot"></api-telegram>
+                <cross-locus   for="uazdao" akk="/cross-locus/wave/uazdao.js"></cross-locus>
+            <!--<portal-wave   for="uazdao" akk="/portal/wave/uazdao.js"></portal-wave> <--{это на второй этап}-->
+            </re-cursor>
+            <head-link   title="MetrikaWave"   href="/metrika/wave/wave-metrika.css" rel="stylesheet"></head-link>
+            <head-link   title="Metrikafixiki" href="/metrika/wave/fixiki-metrika.css" rel="stylesheet"></head-link>
+            <head-link   title="MetrikaUazdao" href="/metrika/wave/uazdao-metrika.css" rel="stylesheet"></head-link>
+            <body-script title="WaveMetrika"   src="/metrika/wave/wave-metrika.js"></body-script>
+            <body-script title="FixikiMetrika" src="/metrika/wave/fixiki-metrika.js"></body-script>
+            <body-script title="UazdaoMetrika" src="/metrika/wave/uazdao-metrika.js"></body-script>
+        </back-side>
+    </in-side>
+<!--<script id="WaveMetrika" type="module" src="/metrika/wave/wave-metrika.js"></script>  <--{генерируется изнанкой}-->
+</body>
+</html>
